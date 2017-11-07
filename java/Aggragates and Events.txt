@@ -1,0 +1,39 @@
+Create
+
+event:
+net.chrisrichardson.eventstore.examples.todolist.common.event.TodoCreatedEvent
+
+aggregate:
+net.chrisrichardson.eventstore.examples.todolist.backend.domain.TodoAggregate
+
+
+
+Update
+
+event:
+net.chrisrichardson.eventstore.examples.todolist.common.event.TodoUpdatedEvent
+
+aggregate:
+net.chrisrichardson.eventstore.examples.todolist.backend.domain.TodoAggregate
+
+
+
+Delete One
+
+event:
+net.chrisrichardson.eventstore.examples.todolist.common.event.TodoDeletedEvent
+
+aggregate:
+net.chrisrichardson.eventstore.examples.todolist.backend.domain.TodoAggregate
+
+
+
+Delete All
+(includes event and aggregate from “Delete One”)
+
+event:
+net.chrisrichardson.eventstore.examples.todolist.common.event.TodoDeletionRequestedEvent
+
+Aggregate:
+net.chrisrichardson.eventstore.examples.todolist.backend.domain.TodoBulkDeleteAggregate
+
