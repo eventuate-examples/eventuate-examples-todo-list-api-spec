@@ -1,0 +1,11 @@
+net.chrisrichardson.eventstore.examples.todolist.backend.domain.TodoAggregate
+
+- net.chrisrichardson.eventstore.examples.todolist.common.event.TodoCreatedEvent
+- net.chrisrichardson.eventstore.examples.todolist.common.event.TodoUpdatedEvent
+- net.chrisrichardson.eventstore.examples.todolist.common.event.TodoDeletedEvent
+
+net.chrisrichardson.eventstore.examples.todolist.backend.domain.TodoBulkDeleteAggregate
+- net.chrisrichardson.eventstore.examples.todolist.common.event.TodoDeletionRequestedEvent
+
+
+

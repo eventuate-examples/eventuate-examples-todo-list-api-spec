@@ -1,0 +1,18 @@
+{
+  "definitions" : {
+    "todo" : {
+      "type" : "object",
+      "properties" : {
+        "title" : {"type": "string"},
+        "completed" : {"type": "boolean"},
+        "order" : {"type":"integer"}
+      }
+    }
+  },
+
+  "type" : "object",
+
+  "properties" : {
+    "todo" : {"$ref" : "#/definitions/todo"}
+  }
+}
